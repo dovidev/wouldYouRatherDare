@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Would You Rather Dare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" type="text/css" href="res/css/app.min.css">
+    <link rel="stylesheet" type="text/css" href="res/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="res/css/home.css">
+    <link rel="stylesheet" type="text/css" href="res/css/setup.css">
+    <link rel="stylesheet" type="text/css" href="res/css/names.css">
+    <link rel="stylesheet" type="text/css" href="res/css/game.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="res/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="res/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="res/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="res/icons/manifest.json">
+    <link rel="mask-icon" href="res/icons/safari-pinned-tab.svg" color="#9e1c20">
+    <link rel="shortcut icon" href="res/icons/favicon.ico">
+    <meta name="msapplication-config" content="res/icons/browserconfig.xml">
+    <meta name="theme-color" content="#efefef">
+  </head>
+
+  <body>
+    <div class="app-page" data-page="home">
+        <div class="app-content">
+            <div>
+                <img class="logo" src="res/images/logo.png" />
+                <div class="app-section">
+                    You slugs will each be given 2 dares to choose from. Do you have what it takes?
+                </div>
+                <div class="app-button" data-target="setup">Get Started</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-page" data-page="setup">
+        <div class="app-topbar">
+            <div class="app-button left" data-back data-autotitle></div>
+            <div class="app-title">Game Setup</div>
+        </div>
+        <div class="app-content">
+            <div class="game_options">
+                <div class="app-section" class="player_count">
+                    <label for="go-player_count">How many players</label>
+                    <input class="app-input" type="number" step="1" min="2" max="8" id="go-player_count" name="player_count" placeholder="3" />
+                </div>
+                <div class="app-section" class="strikes">
+                    <label for="go-strikes">How many chances to wuss out?</label>
+                    <input class="app-input" type="number" step="1" min="1" max="6" id="go-strikes" name="strikes" placeholder="3" />
+                </div>
+                <div class="app-section" class="final_dare">
+                    <label for="go-final_dare">What does the loser have to do?</label>
+                    <textarea class="app-input" id="go-final_dare" name="final_dare" placeholder="This should be something the whole group agrees on that the loser will have to do at the end of the game. There is no backing down from this."></textarea>
+                </div>
+            </div>
+            <div class="app-button" data-target="names">Next</div>
+        </div>
+    </div>
+    
+    <div class="app-page" data-page="names">
+        <div class="app-topbar">
+            <div class="app-button left" data-back data-autotitle></div>
+            <div class="app-title">Player Names</div>
+        </div>
+        <div class="app-content">
+            <div class="names"></div>
+            <div class="app-button" data-target="game">Play</div>
+        </div>
+    </div>
+
+    <div class="app-page" data-page="game">
+        <div class="app-topbar">
+            <div class="app-button left" data-back data-autotitle></div>
+            <div class="app-title">Game</div>
+        </div>
+        <div class="app-content">
+            <div class="player-name"></div>
+            <div class="app-section instructions">Choose your dare!</div>
+            <div class="app-section dare dare1" data-idx="0"></div>
+            <div class="app-section dare dare2" data-idx="1"></div>
+            <div class="app-button rather-not">I'm a wuss. I'd rather not.</div>
+            <table class="scoreboard"><tbody></tbody></table>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="res/js/zepto.js"></script>
+    <script type="text/javascript" src="res/js/app.min.js"></script>
+    <script type="text/javascript" src="res/js/controllers.js"></script>
+    <script type="text/javascript" src="res/js/dares.js"></script>
+    <script type="text/javascript" src="res/js/main.js"></script>
+</body>
+</html>

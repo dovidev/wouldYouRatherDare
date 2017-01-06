@@ -1,0 +1,30 @@
+.app-page[data-page="home"] .app-topbar {
+    height: auto;
+    background: #EEE;
+}
+.app-page[data-page="home"] .app-title {
+    color: #000;
+    padding: 1em .5em 1em .5em;
+    font-size: 2em;
+    text-align: center;
+}
+.app-page[data-page="home"] .app-content > div {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.app-page[data-page="home"] .app-button:nth-of-type(2) {
+    background: #9E1C20;
+}
+.app-page[data-page="home"] .logo {
+    display: block;
+    margin: 1em auto 0;
+}
+.app-page[data-page="home"] .app-section {
+    background: none; 
+    border: none; 
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.app-page[data-page="home"] .chrome-flags {display: none; }
+.app-page[data-page="home"] .chrome-flags .copy-url {font-weight: bold; color: blue; }

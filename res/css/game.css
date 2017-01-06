@@ -1,0 +1,25 @@
+.app-page[data-page="game"] {}
+.app-page[data-page="game"] .player-name {
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em;
+}
+.app-page[data-page="game"] .app-section.instructions {
+    background: none;
+    border: none;
+    font-size: 1.25em;
+}
+.app-page[data-page="game"] .scoreboard {background: #9E1C20; padding: 1em; width: 100%; }
+.app-page[data-page="game"] .scoreboard tr > * {padding: 0.25em; }
+.app-page[data-page="game"] .scoreboard tr th {text-align: right; color: #efefef; }
+.app-page[data-page="game"] .scoreboard tr td.strike {
+    background-color: #efefef; 
+    height: 1.5em;
+    width: 1.5em;
+}
+.app-page[data-page="game"] .scoreboard tr td.strike.struck {
+    background-image: url(../images/strike.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,35 @@
+* {box-sizing: border-box; }
+
+img {max-width: 100%; }
+
+
+#preloaded {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+.app-topbar {
+    background: #9E1C20;
+}
+.app-topbar .app-button[data-back].left {
+    background-position-y: top;
+}
+.app-input[type=checkbox] {
+    -webkit-appearance: checkbox;
+    height: 20px;
+}
+a.app-button {text-decoration: none; }
+
+.app-content .app-button {
+    background-color: #95979A;
+    color: #FFF;
+    margin: 1em;
+    padding: .5em;
+    height: auto;
+    border-radius: 3em;
+    font-size: 1.5em;
+}
+
+.app-topbar .app-button[data-back].left {
+    font-size: 0;
+}

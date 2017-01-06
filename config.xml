@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.dovidev.wouldyouratherdare"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Would You Rather Dare</name>
+
+    <description>
+        A party game full of fun and laughs. 
+    </description>
+    
+    <!-- icons for app -->
+    <icon src="res/icons/favicon-32x32.png" />
+    <icon src="res/icons/apple-touch-icon.png" platform="ios" width="180" height="180" />
+    <icon src="res/icons/mstile-150x150.png" platform="winphone" role="background" />
+    <icon src="res/icons/android-chrome-192x192.png" platform="android" qualifier="hdpi" />
+    <icon src="res/icons/android-chrome-256x256.png" platform="android" qualifier="xhdpi" />
+    
+</widget>
